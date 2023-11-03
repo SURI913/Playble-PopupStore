@@ -35,6 +35,6 @@
 스프라이트에 맞게 변경하려면 Pressed or Highlighted 더블클릭시 편집할 수 있음 or 직접 폴더에서 찾아서 변경도 가능 자세한부분은 검색 or 유튜브 참고
 
 [![Video Label](https://img.youtube.com/vi/l0QwB7xafl4/0.jpg)](https://youtu.be/l0QwB7xafl4?si=Dlco0Wjx-7WfLIAo&t=300)
-<br/>4:58 부분부터 보면 됨
+<br/>5:00 부분부터 보면 됨
 
 - ### 텍스트는 fibberish 폰트 사용
