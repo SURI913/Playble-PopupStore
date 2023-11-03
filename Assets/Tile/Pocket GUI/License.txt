@@ -1,0 +1,10 @@
+Allowed:
+- Use the assets in commercial and non commercial projects
+- Modify the assets
+
+NOT ALLOWED:
+- Re-distribution or re-sell of the assets.
+- Use the assets in NFT/Crypto/Metaverse projects.
+- Use this assets to train AI.
+
+Credit is not necessary but highly appreciated.
