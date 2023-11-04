@@ -31,10 +31,16 @@ public class RoomMaker : MonoBehaviour
     Button[] itemButton;
     Text[] itemText;
 
-    string[] themaColorName =  { "Red", "Yellow", "Green", "Blue"};
-    string[] funitureName =  { "Plants00", "Plants01", "Plants02", "Plants03", "Plants04" };
-    string[] decoName =  { "FreamEmpt", "Fream01", "Fream02", "Fream03" };
+    [SerializeField] string[] themaColorName =  { "Thema", };
+    [SerializeField] string[] funitureName =  { "Funiture", };
+    [SerializeField] string[] decoName =  { "Deco",  };
 
+    //활성화 버튼 체크
+    string itemName;
+    int showThemaNum = 0;
+    int showFunitureNum = 0;
+    int showDecoNum = 0;
+    Button themaButtom, funitureButtom, decoButtom;
     private void Awake()
     {
         //if(!IsServer) { enabled = false; }
@@ -54,9 +60,9 @@ public class RoomMaker : MonoBehaviour
         }
         //-----------------시작 세팅
 
-        Button themaButtom = transform.GetChild(1).GetComponent<Button>();
-        Button funitureButtom = transform.GetChild(2).GetComponent<Button>();
-        Button decoButtom = transform.GetChild(3).GetComponent<Button>();
+        themaButtom = transform.GetChild(1).GetComponent<Button>();
+        funitureButtom = transform.GetChild(2).GetComponent<Button>();
+        decoButtom = transform.GetChild(3).GetComponent<Button>();
 
         itemImage = new Image[Items.Length];
         //레이어속 아이템 데이터 저장
@@ -68,17 +74,18 @@ public class RoomMaker : MonoBehaviour
         itemText = transform.GetChild(0).GetComponentsInChildren<Text>();
 
         //--------------버튼 연결
-        themaButtom.onClick.AddListener(() => SetItemButtonData(themaImage, themaColorName));
-        themaButtom.onClick.AddListener(() => AtiveThemaButton());
+        themaButtom.onClick.AddListener(() => SetItemButtonData(themaImage, themaColorName, showThemaNum)); //첫번째 아이템 부터
+        themaButtom.onClick.AddListener(() => AtiveThemaButton(showThemaNum));
 
-        funitureButtom.onClick.AddListener(() => SetItemButtonData(funitureImage, funitureName));
-        funitureButtom.onClick.AddListener(() => AtiveFunitureButton());
+        funitureButtom.onClick.AddListener(() => SetItemButtonData(funitureImage, funitureName, showFunitureNum));
+        funitureButtom.onClick.AddListener(() => AtiveFunitureButton(showFunitureNum));
 
-        decoButtom.onClick.AddListener(() => SetItemButtonData(decoImage, decoName));
-        decoButtom.onClick.AddListener(() => AtiveDecoButton());
+        decoButtom.onClick.AddListener(() => SetItemButtonData(decoImage, decoName, showDecoNum));
+        decoButtom.onClick.AddListener(() => AtiveDecoButton(showDecoNum));
 
         //테마 버튼 눌린 상태로 두기 (애니메이션 조절)
         themaButtom.onClick.Invoke(); //버튼 활성화
+        itemName = themaColorName[0]; //처음은 테마로 활성화
     }
 
     public void ChangeThema(int index)
@@ -101,48 +108,51 @@ public class RoomMaker : MonoBehaviour
         Floor[index].SetActive(true);
         Previous.Add(Floor[index]);
     }
-
-
-
-    void SetItemButtonData(Sprite[] _itemImage, string[] _itemName)
+    
+    void SetItemButtonData(Sprite[] _itemImage, string[] _itemName, int index)
     {
         for (int i  = 0; i < itemButton.Length; i++)
         {
             itemButton[i].onClick.RemoveAllListeners();
-            itemImage[i].sprite = _itemImage[i];
+            itemImage[i].sprite = _itemImage[i+index];
             //이미지 스프라이트에 맞춰 조절
             RectTransform rect = (RectTransform)itemImage[i].transform;
-            
 
-            rect.sizeDelta = new Vector2(_itemImage[i].rect.width, _itemImage[i].rect.height);
+            rect.sizeDelta = new Vector2(_itemImage[i+ index].rect.width, _itemImage[i + index].rect.height);
+            if(_itemImage[i + index].rect.width >= 60 || _itemImage[i + index].rect.height >= 60)
+            {
+                rect.localScale = new Vector3(0.7f, 0.7f, 0.7f);
+            }
 
-            itemText[i].text = _itemName[i];
+            itemText[i].text = _itemName[i+ index +1];
         }
+        itemName = _itemName[0];
+        
     }
 
-    void AtiveThemaButton()
+    void AtiveThemaButton(int index)
     {
         for (int i = 0; i < itemButton.Length; i++)
         {
             itemButton[i].onClick.RemoveAllListeners();
         }
-        itemButton[0].onClick.AddListener(() => ChangeThema(0));
-        itemButton[1].onClick.AddListener(() => ChangeThema(1));
-        itemButton[2].onClick.AddListener(() => ChangeThema(2));
-        itemButton[3].onClick.AddListener(() => ChangeThema(3));
+        itemButton[0].onClick.AddListener(() => ChangeThema(index));
+        itemButton[1].onClick.AddListener(() => ChangeThema(index+1));
+        itemButton[2].onClick.AddListener(() => ChangeThema(index+2));
+        itemButton[3].onClick.AddListener(() => ChangeThema(index+3));
 
     }
 
-    void AtiveFunitureButton()
+    void AtiveFunitureButton(int index)
     {
         for (int i = 0; i < itemButton.Length; i++)
         {
             itemButton[i].onClick.RemoveAllListeners();
         }
-        itemButton[0].onClick.AddListener(() => SelectFuniture(0));
-        itemButton[1].onClick.AddListener(() => SelectFuniture(1));
-        itemButton[2].onClick.AddListener(() => SelectFuniture(2));
-        itemButton[3].onClick.AddListener(() => SelectFuniture(3));
+        itemButton[0].onClick.AddListener(() => SelectFuniture(index));
+        itemButton[1].onClick.AddListener(() => SelectFuniture(index+1));
+        itemButton[2].onClick.AddListener(() => SelectFuniture(index+2));
+        itemButton[3].onClick.AddListener(() => SelectFuniture(index+3));
         //itemButton[4].onClick.AddListener(() => SelectFuniture(4));
 
     }
@@ -155,16 +165,16 @@ public class RoomMaker : MonoBehaviour
 
     }
 
-    void AtiveDecoButton()
+    void AtiveDecoButton(int index)
     {
         for (int i = 0; i < itemButton.Length; i++)
         {
             itemButton[i].onClick.RemoveAllListeners();
         }
-        itemButton[0].onClick.AddListener(() => SelectDeco(0));
-        itemButton[1].onClick.AddListener(() => SelectDeco(1));
-        itemButton[2].onClick.AddListener(() => SelectDeco(2));
-        itemButton[3].onClick.AddListener(() => SelectDeco(3));
+        itemButton[0].onClick.AddListener(() => SelectDeco(index));
+        itemButton[1].onClick.AddListener(() => SelectDeco(index+1));
+        itemButton[2].onClick.AddListener(() => SelectDeco(index+2));
+        itemButton[3].onClick.AddListener(() => SelectDeco(index + 3));
         //itemButton[4].onClick.AddListener(() => SelectDeco(4));
 
     }
@@ -176,4 +186,54 @@ public class RoomMaker : MonoBehaviour
         selectObject.gameObject.SetActive(true);
 
     }
+
+    //아이템 이동
+    public void RightButtonClick()
+    {
+        if (itemName == themaColorName[0] && showThemaNum<themaImage.Length-4)
+        {
+            showThemaNum++;
+            themaButtom.onClick.Invoke(); //버튼 활성화
+        }
+        else if(itemName == funitureName[0] && showFunitureNum < funitureImage.Length-4)
+        {
+            showFunitureNum++;
+            funitureButtom.onClick.Invoke();
+        }
+        else if(itemName == decoName[0] && showDecoNum < decoImage.Length - 4)
+        {
+            showDecoNum++;
+            decoButtom.onClick.Invoke();
+        }
+        else
+        {
+            //이후에  UI 추가
+            Debug.Log(itemName+"에 더이상 아이템이 없습니다");
+        }
+    }
+
+    public void LeftButtonClick()
+    {
+        if (itemName == themaColorName[0] && showThemaNum > 0)
+        {
+            showThemaNum--;
+            themaButtom.onClick.Invoke(); //버튼 활성화
+        }
+        else if (itemName == funitureName[0] && showFunitureNum > 0)
+        {
+            showFunitureNum--;
+            funitureButtom.onClick.Invoke();
+        }
+        else if (itemName == decoName[0] && showDecoNum > 0)
+        {
+            showDecoNum--;
+            decoButtom.onClick.Invoke();
+        }
+        else
+        {
+            //이후에  UI 추가
+            Debug.Log(itemName+"에 더이상 아이템이 없습니다");
+        }
+    }
+
 }
