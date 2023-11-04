@@ -27,7 +27,6 @@ public class Move : MonoBehaviour
         myAnim.SetFloat("MoveY", playerRb.velocity.y);*/
     }
     Transform currentTransfrom;
-    bool isWall = false;
     private void OnCollisionEnter2D(Collision2D collision)
     {
         

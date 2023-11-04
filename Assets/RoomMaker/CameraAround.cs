@@ -9,7 +9,7 @@ public class CameraAround : MonoBehaviour
     Camera Camera;
 
     Vector2 clickPoint;
-    float dragSpeed = 30.0f;
+    float dragSpeed = 12.0f;
 
 
     private void Awake()

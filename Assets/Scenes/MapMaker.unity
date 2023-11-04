@@ -1091,6 +1091,26 @@ MonoBehaviour:
   - {fileID: 1801250729}
   - {fileID: 1970120327}
   - {fileID: 758651245}
+  themaColorName:
+  - Thema
+  - Red
+  - Yellow
+  - Green
+  - Blue
+  funitureName:
+  - Funiture
+  - Plants00
+  - Plants01
+  - Plants02
+  - Plants03
+  - Plants04
+  decoName:
+  - Deco
+  - FreamEmpt
+  - Fream01
+  - Fream02
+  - Fream03
+  - Fream04
 --- !u!1 &507837817 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8269336834291015357, guid: caf209205e14cdf4cb3280812b8c83e4, type: 3}
@@ -2103,7 +2123,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1046587987}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 365543931}
+        m_TargetAssemblyTypeName: RoomMaker, Assembly-CSharp
+        m_MethodName: RightButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1046587987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2672,6 +2704,7 @@ GameObject:
   - component: {fileID: 1658203616}
   - component: {fileID: 1658203615}
   - component: {fileID: 1658203614}
+  - component: {fileID: 1658203617}
   m_Layer: 5
   m_Name: ThemaButton
   m_TagString: Untagged
@@ -2719,7 +2752,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 3
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2782,6 +2815,27 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658203612}
   m_CullTransparentMesh: 1
+--- !u!95 &1658203617
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658203612}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7d1fec28ba5be7f4480b31362d7bd03d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1660044463
 GameObject:
   m_ObjectHideFlags: 0
@@ -3897,7 +3951,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2117059852}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 365543931}
+        m_TargetAssemblyTypeName: RoomMaker, Assembly-CSharp
+        m_MethodName: LeftButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2117059852
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4601,7 +4667,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7775800539759835482, guid: b084336aeefae8c4db4ecdc899e58be3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7775800539759835483, guid: b084336aeefae8c4db4ecdc899e58be3, type: 3}
       propertyPath: m_RootOrder
@@ -4662,7 +4728,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8269336834291015357, guid: caf209205e14cdf4cb3280812b8c83e4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8269336834291015358, guid: caf209205e14cdf4cb3280812b8c83e4, type: 3}
       propertyPath: m_RootOrder
