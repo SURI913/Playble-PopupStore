@@ -19,6 +19,7 @@ public class SetFrameObject : MonoBehaviour
     {
         button = GetComponent<Button>();
         button.onClick.AddListener(SetFrame);
+        tilemap.gameObject.SetActive(false);
     }
 
     private void SetFrame()
@@ -30,6 +31,8 @@ public class SetFrameObject : MonoBehaviour
         }
         selectObject.tilemap = tilemap;  //가구용타일맵
         selectObject.changeTile = Frame;
+
+        tilemap.gameObject.SetActive(true);
         selectObject.gameObject.SetActive(true);
     }
 
