@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_9
+      name: checkEmpt
       rect:
         serializedVersion: 2
         x: 520
@@ -303,7 +303,7 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -336,7 +336,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_11
+      name: checkO
       rect:
         serializedVersion: 2
         x: 584
@@ -357,7 +357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_12
+      name: checkX
       rect:
         serializedVersion: 2
         x: 616
@@ -1269,7 +1269,7 @@ TextureImporter:
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 8, z: 6, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -7077,7 +7077,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_335
+      name: check
       rect:
         serializedVersion: 2
         x: 774
@@ -11311,7 +11311,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_107: 425167475
       Modern_UI_Style_2_32x32_108: -816022402
       Modern_UI_Style_2_32x32_109: -2095039776
-      Modern_UI_Style_2_32x32_11: 363331788
       Modern_UI_Style_2_32x32_110: 7067245
       Modern_UI_Style_2_32x32_111: 362065035
       Modern_UI_Style_2_32x32_112: 208643638
@@ -11322,7 +11321,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_117: 1337787776
       Modern_UI_Style_2_32x32_118: -193397038
       Modern_UI_Style_2_32x32_119: -133175691
-      Modern_UI_Style_2_32x32_12: 1454716523
       Modern_UI_Style_2_32x32_120: -2066753163
       Modern_UI_Style_2_32x32_121: -2093608483
       Modern_UI_Style_2_32x32_122: 1450453870
@@ -11556,7 +11554,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_332: 1653301798
       Modern_UI_Style_2_32x32_333: -1343308166
       Modern_UI_Style_2_32x32_334: 229435526
-      Modern_UI_Style_2_32x32_335: -33921207
       Modern_UI_Style_2_32x32_336: -1416960299
       Modern_UI_Style_2_32x32_337: -662086819
       Modern_UI_Style_2_32x32_338: -1047762756
@@ -11800,7 +11797,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_87: -1311373817
       Modern_UI_Style_2_32x32_88: -214755405
       Modern_UI_Style_2_32x32_89: -167015894
-      Modern_UI_Style_2_32x32_9: -497664474
       Modern_UI_Style_2_32x32_90: 1933033739
       Modern_UI_Style_2_32x32_91: 391577843
       Modern_UI_Style_2_32x32_92: 553613824
@@ -11816,6 +11812,10 @@ TextureImporter:
       RightButton003: 1024831326
       Select: 283285489
       UIPlane: -1252248950
+      check: -33921207
+      checkEmpt: -497664474
+      checkO: 363331788
+      checkX: 1454716523
       nameTag: -339518250
       nomalButton001: 736899182
       nomalButton002: 1487411024
