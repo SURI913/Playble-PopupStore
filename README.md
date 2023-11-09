@@ -38,3 +38,22 @@
 <br/>5:00 부분부터 보면 됨
 
 - ### 텍스트는 fibberish 폰트 사용
+
+- ### 자른 가구 및 데코 타일 적용법 <br/>
+  ![image](https://github.com/SURI913/Playble-PopupStore/assets/101981952/c7439bca-7982-451b-ab81-7b0844d99ee8)<br/>
+  MapMakeItmeList 오브젝트 클릭하면 인스펙터에 입력값 넣을 수 있음
+  여기서 벽, 바닥은 Tilemap을 사용
+  ![image](https://github.com/SURI913/Playble-PopupStore/assets/101981952/3fa64813-0c47-4ece-877a-3217eb6fcd2d)<br/>
+  이미지와 타일을 순서대로 배열에 넣기 + 이름도 순서대로 인스펙터 창에서 입력
+  ![image](https://github.com/SURI913/Playble-PopupStore/assets/101981952/3871d965-4f91-461c-8e86-f7fa36fee810)<br/>
+
+  **싱글이랑 멀티로 타일맵 적용한 차이**
+  멀티 => 벽,바닥은 직접 타일을 하나하나 배치해서 타일맵을 인스펙터 창에서 인식시킴
+  싱글 => 클릭한번으로 타일 배치를 하기위해 단독으로 적용하는 것 잘라서 일일이 설치x 유저가 한번클릭으로 설치
+  벽의 경우 Tilemap Collider2D, Composit Collider, Rigidbody 2D 필요
+  벽 아랫단은 바닥이랑 같이 그림
+  ![image](https://github.com/SURI913/Playble-PopupStore/assets/101981952/24963617-c7b4-4b19-92bd-a4c6fa57c3a4)
+  ![image](https://github.com/SURI913/Playble-PopupStore/assets/101981952/6ef7603e-2b7c-40f1-a70b-5272af55b4b0)
+
+
+
