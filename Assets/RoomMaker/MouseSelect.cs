@@ -42,7 +42,7 @@ public class MouseSelect : MonoBehaviour
             {
                 myImage.color = new Color(1f, 1f, 1f, 1f);
                 //우클릭시
-                if (Input.GetMouseButton(0) && !EventSystem.current.IsPointerOverGameObject())
+                if (Input.GetMouseButtonUp(0) && !EventSystem.current.IsPointerOverGameObject())
                 {
                     tilemap.SetTile(new Vector3Int((int)mousePosition.x, (int)mousePosition.y, 0), changeTile);
                     //쉽게 그려짐
