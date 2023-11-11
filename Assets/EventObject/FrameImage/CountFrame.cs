@@ -7,7 +7,7 @@ public class CountFrame : MonoBehaviour
 {
 
     [SerializeField] GameObject countObject;
-    [SerializeField] Scrollbar AtiveFrameScrollbar;
+    [SerializeField] Slider AtiveFrameSlider;
     [SerializeField] Button HandleBtn;
 
     [SerializeField] Button plusButton;
@@ -29,6 +29,7 @@ public class CountFrame : MonoBehaviour
         HandleBtn.onClick.AddListener(AtiveFrameObjcet);
         plusButton.onClick.AddListener(PlusButton);
         minusButton.onClick.AddListener(MinusButton);
+        AtiveFrameSlider.value = 0;
     }
 
     bool ativeFrameObject = false;
@@ -36,8 +37,7 @@ public class CountFrame : MonoBehaviour
     {
         if(!ativeFrameObject)
         {
-            AtiveFrameScrollbar.value = 1;
-            AtiveFrameScrollbar.size = 1;
+            AtiveFrameSlider.value = 1;
             ativeFrameObject = true;
             countObject.SetActive(true);
 
@@ -47,8 +47,7 @@ public class CountFrame : MonoBehaviour
         }
         else
         {
-            AtiveFrameScrollbar.value = 0;
-            AtiveFrameScrollbar.size = 0.3f;
+            AtiveFrameSlider.value = 0;
             ativeFrameObject = false;
             countObject.SetActive(false);
 
@@ -62,6 +61,33 @@ public class CountFrame : MonoBehaviour
 
         }
 
+    }
+
+    public void AtiveFrameObjcet(float value)
+    {
+        if (value == 1)
+        {
+            ativeFrameObject = true;
+            countObject.SetActive(true);
+
+            SettingObject1.SetActive(true);
+            FrameTilemap1.SetActive(true);
+
+        }
+        else
+        {
+            ativeFrameObject = false;
+            countObject.SetActive(false);
+
+            SettingObject1.SetActive(false);
+            SettingObject2.SetActive(false);
+            SettingObject3.SetActive(false);
+
+            FrameTilemap1.SetActive(false);
+            FrameTilemap2.SetActive(false);
+            FrameTilemap3.SetActive(false);
+
+        }
     }
 
     void PlusButton()

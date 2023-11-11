@@ -5,9 +5,10 @@ using UnityEngine.Tilemaps;
 using UnityEngine.UI;
 public class SetMyMusic : MonoBehaviour
 {
-    [SerializeField] Button ativeMusic;
+
+    [SerializeField] Slider ativeMusicSlider;
+    [SerializeField] Button handleBtn;
     [SerializeField] GameObject setMusicObjcet;
-    [SerializeField] Button showMusicList;
     [SerializeField] Button setMusicBox;
 
     //---------------------음악타일 설치
@@ -18,9 +19,10 @@ public class SetMyMusic : MonoBehaviour
 
     private void Awake()
     {
-        setMusicObjcet.SetActive(true);
-        ativeMusic.onClick.AddListener(AtiveMusic);
+        setMusicObjcet.SetActive(false);
+        handleBtn.onClick.AddListener(AtiveMusic);
         setMusicBox.onClick.AddListener(SetMusicBox);
+        ativeMusicSlider.value = 0;
     }
 
     bool ativeButton = false;
@@ -29,12 +31,27 @@ public class SetMyMusic : MonoBehaviour
         if (!ativeButton)
         {
             setMusicObjcet.SetActive(true);
-            ativeButton = false;
+            ativeButton = true;
+            ativeMusicSlider.value = 1;
             return;
         }
-        setMusicObjcet.SetActive(true);
-        ativeButton = true;
+        setMusicObjcet.SetActive(false);
+        ativeButton = false;
+        ativeMusicSlider.value = 0;
 
+    }
+
+    //스크롤 할때도 값 바뀌게
+    public void AtiveMusic(float value)
+    {
+        if (value == 1)
+        {
+            setMusicObjcet.SetActive(true);
+            ativeButton = true;
+            return;
+        }
+        setMusicObjcet.SetActive(false);
+        ativeButton = false;
     }
 
     private void SetMusicBox()
