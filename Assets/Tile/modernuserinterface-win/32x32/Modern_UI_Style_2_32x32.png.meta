@@ -114,7 +114,7 @@ TextureImporter:
         height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 14, y: 14, z: 14, w: 14}
+      border: {x: 10, y: 12, z: 10, w: 14}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -294,7 +294,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_9
+      name: checkEmpt
       rect:
         serializedVersion: 2
         x: 520
@@ -303,7 +303,7 @@ TextureImporter:
         height: 14
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -336,7 +336,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_11
+      name: checkO
       rect:
         serializedVersion: 2
         x: 584
@@ -357,7 +357,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_12
+      name: checkX
       rect:
         serializedVersion: 2
         x: 616
@@ -1269,7 +1269,7 @@ TextureImporter:
         height: 28
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 8, z: 6, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1764,7 +1764,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_79
+      name: scrollbar2
       rect:
         serializedVersion: 2
         x: 618
@@ -1773,7 +1773,7 @@ TextureImporter:
         height: 36
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1785,16 +1785,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_80
+      name: scrollbar1
       rect:
         serializedVersion: 2
         x: 650
         y: 894
-        width: 10
-        height: 36
+        width: 8
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -3192,16 +3192,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_147
+      name: UIPlane
       rect:
         serializedVersion: 2
         x: 126
-        y: 766
+        y: 768
         width: 36
-        height: 36
+        height: 34
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 2, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -6867,7 +6867,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_324
+      name: nameTag
       rect:
         serializedVersion: 2
         x: 64
@@ -6876,7 +6876,7 @@ TextureImporter:
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 6, y: 6, z: 6, w: 6}
+      border: {x: 6, y: 8, z: 6, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -7077,7 +7077,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_335
+      name: check
       rect:
         serializedVersion: 2
         x: 774
@@ -8925,27 +8925,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_423
-      rect:
-        serializedVersion: 2
-        x: 1154
-        y: 0
-        width: 28
-        height: 288
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc86a58bf73e8bf4b87bc1a22468c851
-      internalID: 643258887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Modern_UI_Style_2_32x32_424
       rect:
         serializedVersion: 2
@@ -9198,13 +9177,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_437
+      name: +bt002
       rect:
         serializedVersion: 2
         x: 1058
         y: 224
         width: 28
-        height: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9219,13 +9198,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_438
+      name: +b003
       rect:
         serializedVersion: 2
         x: 1090
         y: 224
         width: 28
-        height: 28
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9240,13 +9219,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_439
+      name: -btn002
       rect:
         serializedVersion: 2
         x: 1186
         y: 224
         width: 28
-        height: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -9261,13 +9240,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_440
+      name: -btn003
       rect:
         serializedVersion: 2
         x: 1218
         y: 224
         width: 28
-        height: 28
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10572,7 +10551,7 @@ TextureImporter:
         height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 12, z: 10, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -11255,6 +11234,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: +btn001
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 224
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1577f48c1f9130c4a98876fa5689273d
+      internalID: -425912117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: -btn001
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 224
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca951124ea8055f4ab785eceba5cca9e
+      internalID: 840006843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -11266,6 +11287,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      +b003: -117912128
+      +bt002: 1514200282
+      +btn001: -425912117
+      -btn001: 840006843
+      -btn002: 544906956
+      -btn003: -337485113
       ArrowButton001: 503688911
       ArrowButton002: -1682670273
       ArrowButton003: 913795599
@@ -11284,7 +11311,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_107: 425167475
       Modern_UI_Style_2_32x32_108: -816022402
       Modern_UI_Style_2_32x32_109: -2095039776
-      Modern_UI_Style_2_32x32_11: 363331788
       Modern_UI_Style_2_32x32_110: 7067245
       Modern_UI_Style_2_32x32_111: 362065035
       Modern_UI_Style_2_32x32_112: 208643638
@@ -11295,7 +11321,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_117: 1337787776
       Modern_UI_Style_2_32x32_118: -193397038
       Modern_UI_Style_2_32x32_119: -133175691
-      Modern_UI_Style_2_32x32_12: 1454716523
       Modern_UI_Style_2_32x32_120: -2066753163
       Modern_UI_Style_2_32x32_121: -2093608483
       Modern_UI_Style_2_32x32_122: 1450453870
@@ -11325,7 +11350,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_144: -1641899653
       Modern_UI_Style_2_32x32_145: 1521039186
       Modern_UI_Style_2_32x32_146: -2064216948
-      Modern_UI_Style_2_32x32_147: -1252248950
       Modern_UI_Style_2_32x32_148: 774583707
       Modern_UI_Style_2_32x32_149: 1467948852
       Modern_UI_Style_2_32x32_15: 1738096051
@@ -11520,7 +11544,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_321: 447332441
       Modern_UI_Style_2_32x32_322: -1124862624
       Modern_UI_Style_2_32x32_323: 231829140
-      Modern_UI_Style_2_32x32_324: -339518250
       Modern_UI_Style_2_32x32_325: -1135228461
       Modern_UI_Style_2_32x32_327: -683589400
       Modern_UI_Style_2_32x32_328: -853358328
@@ -11531,7 +11554,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_332: 1653301798
       Modern_UI_Style_2_32x32_333: -1343308166
       Modern_UI_Style_2_32x32_334: 229435526
-      Modern_UI_Style_2_32x32_335: -33921207
       Modern_UI_Style_2_32x32_336: -1416960299
       Modern_UI_Style_2_32x32_337: -662086819
       Modern_UI_Style_2_32x32_338: -1047762756
@@ -11642,11 +11664,7 @@ TextureImporter:
       Modern_UI_Style_2_32x32_434: -1817492020
       Modern_UI_Style_2_32x32_435: 286975232
       Modern_UI_Style_2_32x32_436: -881576997
-      Modern_UI_Style_2_32x32_437: 1514200282
-      Modern_UI_Style_2_32x32_438: -117912128
-      Modern_UI_Style_2_32x32_439: 544906956
       Modern_UI_Style_2_32x32_44: 8287401
-      Modern_UI_Style_2_32x32_440: -337485113
       Modern_UI_Style_2_32x32_441: -671907293
       Modern_UI_Style_2_32x32_442: 1692804754
       Modern_UI_Style_2_32x32_443: -1682743936
@@ -11769,9 +11787,7 @@ TextureImporter:
       Modern_UI_Style_2_32x32_76: -694724528
       Modern_UI_Style_2_32x32_77: -99539113
       Modern_UI_Style_2_32x32_78: -1254489300
-      Modern_UI_Style_2_32x32_79: -1183304617
       Modern_UI_Style_2_32x32_8: 1690145615
-      Modern_UI_Style_2_32x32_80: -1837936119
       Modern_UI_Style_2_32x32_81: -1595936885
       Modern_UI_Style_2_32x32_82: 2099925655
       Modern_UI_Style_2_32x32_83: -2026068960
@@ -11781,7 +11797,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_87: -1311373817
       Modern_UI_Style_2_32x32_88: -214755405
       Modern_UI_Style_2_32x32_89: -167015894
-      Modern_UI_Style_2_32x32_9: -497664474
       Modern_UI_Style_2_32x32_90: 1933033739
       Modern_UI_Style_2_32x32_91: 391577843
       Modern_UI_Style_2_32x32_92: 553613824
@@ -11796,9 +11811,17 @@ TextureImporter:
       RightButton002: 1526259876
       RightButton003: 1024831326
       Select: 283285489
+      UIPlane: -1252248950
+      check: -33921207
+      checkEmpt: -497664474
+      checkO: 363331788
+      checkX: 1454716523
+      nameTag: -339518250
       nomalButton001: 736899182
       nomalButton002: 1487411024
       nomalButton003: -925379451
+      scrollbar1: -1837936119
+      scrollbar2: -1183304617
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
