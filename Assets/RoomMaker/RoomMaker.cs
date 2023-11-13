@@ -35,7 +35,7 @@ public class RoomMaker : MonoBehaviour
     [SerializeField] string[] funitureName =  { "Funiture", };
     [SerializeField] string[] decoName =  { "Deco",  };
 
-    //È°¼ºÈ­ ¹öÆ° Ã¼Å©
+    //È°ï¿½ï¿½È­ ï¿½ï¿½Æ° Ã¼Å©
     string itemName;
     int showThemaNum = 0;
     int showFunitureNum = 0;
@@ -58,14 +58,14 @@ public class RoomMaker : MonoBehaviour
                 go.SetActive(false);
             }
         }
-        //-----------------½ÃÀÛ ¼¼ÆÃ
+        //-----------------ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
         themaButtom = transform.GetChild(1).GetComponent<Button>();
         funitureButtom = transform.GetChild(2).GetComponent<Button>();
         decoButtom = transform.GetChild(3).GetComponent<Button>();
 
         itemImage = new Image[Items.Length];
-        //·¹ÀÌ¾î¼Ó ¾ÆÀÌÅÛ µ¥ÀÌÅÍ ÀúÀå
+        //ï¿½ï¿½ï¿½Ì¾ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         for (int i =0; i<Items.Length;i++)
         {
             itemImage[i] = Items[i].transform.GetChild(0).GetComponent<Image>();
@@ -73,8 +73,8 @@ public class RoomMaker : MonoBehaviour
         itemButton = transform.GetChild(0).GetComponentsInChildren<Button>();
         itemText = transform.GetChild(0).GetComponentsInChildren<Text>();
 
-        //--------------¹öÆ° ¿¬°á
-        themaButtom.onClick.AddListener(() => SetItemButtonData(themaImage, themaColorName, showThemaNum)); //Ã¹¹øÂ° ¾ÆÀÌÅÛ ºÎÅÍ
+        //--------------ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½
+        themaButtom.onClick.AddListener(() => SetItemButtonData(themaImage, themaColorName, showThemaNum)); //Ã¹ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         themaButtom.onClick.AddListener(() => AtiveThemaButton(showThemaNum));
 
         funitureButtom.onClick.AddListener(() => SetItemButtonData(funitureImage, funitureName, showFunitureNum));
@@ -83,16 +83,16 @@ public class RoomMaker : MonoBehaviour
         decoButtom.onClick.AddListener(() => SetItemButtonData(decoImage, decoName, showDecoNum));
         decoButtom.onClick.AddListener(() => AtiveDecoButton(showDecoNum));
 
-        //Å×¸¶ ¹öÆ° ´­¸° »óÅÂ·Î µÎ±â (¾Ö´Ï¸ŞÀÌ¼Ç Á¶Àı)
-        themaButtom.onClick.Invoke(); //¹öÆ° È°¼ºÈ­
-        itemName = themaColorName[0]; //Ã³À½Àº Å×¸¶·Î È°¼ºÈ­
+        //ï¿½×¸ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Â·ï¿½ ï¿½Î±ï¿½ (ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½)
+        themaButtom.onClick.Invoke(); //ï¿½ï¿½Æ° È°ï¿½ï¿½È­
+        itemName = themaColorName[0]; //Ã³ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½ È°ï¿½ï¿½È­
     }
 
     public void ChangeThema(int index)
     {
         //if (!IsServer) return;
 
-        //ÀÌÀü¿¡ ¼±ÅÃÇÑ °Í Áö¿ì°í
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
         if (Previous != null)
         {
             foreach (GameObject go in Previous)
@@ -102,7 +102,7 @@ public class RoomMaker : MonoBehaviour
             Previous.Clear();
         }
 
-        //»õ ¾ÆÀÌÅÛ È°¼ºÈ­
+        //ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È°ï¿½ï¿½È­
         Wall[index].SetActive(true);
         Previous.Add(Wall[index]);
         Floor[index].SetActive(true);
@@ -115,7 +115,7 @@ public class RoomMaker : MonoBehaviour
         {
             itemButton[i].onClick.RemoveAllListeners();
             itemImage[i].sprite = _itemImage[i+index];
-            //ÀÌ¹ÌÁö ½ºÇÁ¶óÀÌÆ®¿¡ ¸ÂÃç Á¶Àı
+            //ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
             RectTransform rect = (RectTransform)itemImage[i].transform;
 
             rect.sizeDelta = new Vector2(_itemImage[i+ index].rect.width, _itemImage[i + index].rect.height);
@@ -135,6 +135,7 @@ public class RoomMaker : MonoBehaviour
         for (int i = 0; i < itemButton.Length; i++)
         {
             itemButton[i].onClick.RemoveAllListeners();
+            // itemButton[i].onClick.AddListener(() => ChangeThema(index+i))
         }
         itemButton[0].onClick.AddListener(() => ChangeThema(index));
         itemButton[1].onClick.AddListener(() => ChangeThema(index+1));
@@ -148,6 +149,7 @@ public class RoomMaker : MonoBehaviour
         for (int i = 0; i < itemButton.Length; i++)
         {
             itemButton[i].onClick.RemoveAllListeners();
+            // itemButton[i].onClick.AddListener(() => SelectFuniture(index+i))
         }
         itemButton[0].onClick.AddListener(() => SelectFuniture(index));
         itemButton[1].onClick.AddListener(() => SelectFuniture(index+1));
@@ -159,7 +161,7 @@ public class RoomMaker : MonoBehaviour
 
     void SelectFuniture(int index)
     {
-        selectObject.tilemap = tilemap[0];  //°¡±¸¿ëÅ¸ÀÏ¸Ê
+        selectObject.tilemap = tilemap[0];  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Å¸ï¿½Ï¸ï¿½
         selectObject.changeTile = funitureTiles[index];
         selectObject.gameObject.SetActive( true );
 
@@ -170,6 +172,7 @@ public class RoomMaker : MonoBehaviour
         for (int i = 0; i < itemButton.Length; i++)
         {
             itemButton[i].onClick.RemoveAllListeners();
+            // itemButton[i].onClick.AddListener(() => SelectDeco(index+i));
         }
         itemButton[0].onClick.AddListener(() => SelectDeco(index));
         itemButton[1].onClick.AddListener(() => SelectDeco(index+1));
@@ -181,19 +184,19 @@ public class RoomMaker : MonoBehaviour
 
     void SelectDeco(int index)
     {
-        selectObject.tilemap = tilemap[1];  //Å×ÄÚ¿ë Å¸ÀÏ¸Ê ¾çÅºÀÚ °°Àº°Å
+        selectObject.tilemap = tilemap[1];  //ï¿½ï¿½ï¿½Ú¿ï¿½ Å¸ï¿½Ï¸ï¿½ ï¿½ï¿½Åºï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         selectObject.changeTile = decoTiles[index];
         selectObject.gameObject.SetActive(true);
 
     }
 
-    //¾ÆÀÌÅÛ ÀÌµ¿
+    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½
     public void RightButtonClick()
     {
         if (itemName == themaColorName[0] && showThemaNum<themaImage.Length-4)
         {
             showThemaNum++;
-            themaButtom.onClick.Invoke(); //¹öÆ° È°¼ºÈ­
+            themaButtom.onClick.Invoke(); //ï¿½ï¿½Æ° È°ï¿½ï¿½È­
         }
         else if(itemName == funitureName[0] && showFunitureNum < funitureImage.Length-4)
         {
@@ -207,8 +210,8 @@ public class RoomMaker : MonoBehaviour
         }
         else
         {
-            //ÀÌÈÄ¿¡  UI Ãß°¡
-            Debug.Log(itemName+"¿¡ ´õÀÌ»ó ¾ÆÀÌÅÛÀÌ ¾ø½À´Ï´Ù");
+            //ï¿½ï¿½ï¿½Ä¿ï¿½  UI ï¿½ß°ï¿½
+            Debug.Log(itemName+"ë”ì´ìƒ ì¡´ì¬í•˜ì§€ ì•ŠìŒ!");
         }
     }
 
@@ -217,7 +220,7 @@ public class RoomMaker : MonoBehaviour
         if (itemName == themaColorName[0] && showThemaNum > 0)
         {
             showThemaNum--;
-            themaButtom.onClick.Invoke(); //¹öÆ° È°¼ºÈ­
+            themaButtom.onClick.Invoke(); //ï¿½ï¿½Æ° È°ï¿½ï¿½È­
         }
         else if (itemName == funitureName[0] && showFunitureNum > 0)
         {
@@ -231,8 +234,8 @@ public class RoomMaker : MonoBehaviour
         }
         else
         {
-            //ÀÌÈÄ¿¡  UI Ãß°¡
-            Debug.Log(itemName+"¿¡ ´õÀÌ»ó ¾ÆÀÌÅÛÀÌ ¾ø½À´Ï´Ù");
+            //ï¿½ï¿½ï¿½Ä¿ï¿½  UI ï¿½ß°ï¿½
+            Debug.Log(itemName+"ë”ì´ìƒ ì¡´ì¬í•˜ì§€ ì•ŠìŒ");
         }
     }
 
