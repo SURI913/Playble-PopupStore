@@ -101,18 +101,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -159,13 +147,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Red
+      name: Room_Builder_Walls_32x32_2
       rect:
         serializedVersion: 2
-        x: 990
-        y: 1154
-        width: 32
-        height: 62
+        x: 704
+        y: 192
+        width: 320
+        height: 1088
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,48 +163,6 @@ TextureImporter:
       bones: []
       spriteID: 2dce1a46012ab3142896b2bf315f3f9e
       internalID: 1316396835
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blue
-      rect:
-        serializedVersion: 2
-        x: 990
-        y: 962
-        width: 32
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c8157f965bd55f4ea93776f9861e89c
-      internalID: 468570376
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Green
-      rect:
-        serializedVersion: 2
-        x: 988
-        y: 834
-        width: 32
-        height: 62
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: db140c1cf802ecc45a88a3b7f35bf0b2
-      internalID: 602150976
       vertices: []
       indices: 
       edges: []
@@ -232,10 +178,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Blue: 468570376
-      Green: 602150976
-      Red: 1316396835
       Room_Builder_Walls_32x32_1: 1794821240
+      Room_Builder_Walls_32x32_2: 1316396835
       Yellow: -300891521
   spritePackingTag: 
   pSDRemoveMatte: 0
