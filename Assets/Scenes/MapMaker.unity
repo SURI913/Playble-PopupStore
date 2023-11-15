@@ -1271,49 +1271,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4861156598828089028, guid: edc797a2596e07043ab9dee6ff11c714, type: 3}
   m_PrefabInstance: {fileID: 4861156599052504883}
   m_PrefabAsset: {fileID: 0}
---- !u!66 &312717819
-CompositeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312717814}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths: []
-  m_CompositePaths:
-    m_Paths: []
-  m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
---- !u!50 &312717820
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312717814}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &318386031
 GameObject:
   m_ObjectHideFlags: 0
@@ -2671,49 +2628,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4132649449246097536, guid: 811c684ce931ea641af91d6ce1683e3f, type: 3}
   m_PrefabInstance: {fileID: 4132649449755967662}
   m_PrefabAsset: {fileID: 0}
---- !u!66 &577503282
-CompositeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 577503277}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths: []
-  m_CompositePaths:
-    m_Paths: []
-  m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
---- !u!50 &577503283
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 577503277}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &643028027
 GameObject:
   m_ObjectHideFlags: 0
@@ -3712,49 +3626,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 683588723807122837, guid: be0994d62211d9346bbbb7b6aba79e9e, type: 3}
   m_PrefabInstance: {fileID: 683588724538440320}
   m_PrefabAsset: {fileID: 0}
---- !u!66 &879693593
-CompositeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879693588}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_GeometryType: 0
-  m_GenerationType: 0
-  m_EdgeRadius: 0
-  m_ColliderPaths: []
-  m_CompositePaths:
-    m_Paths: []
-  m_VertexDistance: 0.0005
-  m_OffsetDistance: 0.00005
---- !u!50 &879693594
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879693588}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &881713533
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,7 +8016,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -9173,6 +9044,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S_GreenRoomWall
       objectReference: {fileID: 0}
+    - target: {fileID: 683588723807122836, guid: be0994d62211d9346bbbb7b6aba79e9e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 683588723807122837, guid: be0994d62211d9346bbbb7b6aba79e9e, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9515,6 +9390,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S_RedRoomFloor
       objectReference: {fileID: 0}
+    - target: {fileID: 3709990201192374983, guid: 0f8db8dcdffa3c44f8c1cf31873012cc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0f8db8dcdffa3c44f8c1cf31873012cc, type: 3}
 --- !u!1001 &4132649449755967662
@@ -9633,6 +9512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: S_BlueRoomWall
       objectReference: {fileID: 0}
+    - target: {fileID: 4861156598828089029, guid: edc797a2596e07043ab9dee6ff11c714, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: edc797a2596e07043ab9dee6ff11c714, type: 3}
 --- !u!1001 &6774861129761783376
@@ -9645,6 +9528,10 @@ PrefabInstance:
     - target: {fileID: 6774861131346417838, guid: d127e41f3e47064429a012b663cf3fbe, type: 3}
       propertyPath: m_Name
       value: S_BlueRoomFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6774861131346417838, guid: d127e41f3e47064429a012b663cf3fbe, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6774861131346417839, guid: d127e41f3e47064429a012b663cf3fbe, type: 3}
       propertyPath: m_RootOrder
@@ -9725,7 +9612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7775800539759835482, guid: b084336aeefae8c4db4ecdc899e58be3, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7775800539759835483, guid: b084336aeefae8c4db4ecdc899e58be3, type: 3}
       propertyPath: m_RootOrder
@@ -9786,7 +9673,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8269336834291015357, guid: caf209205e14cdf4cb3280812b8c83e4, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8269336834291015358, guid: caf209205e14cdf4cb3280812b8c83e4, type: 3}
       propertyPath: m_RootOrder
@@ -9852,6 +9739,10 @@ PrefabInstance:
     - target: {fileID: 8452985334565660740, guid: 609d1107664ffc141abb117352dbbcd5, type: 3}
       propertyPath: m_Name
       value: S_GreenRoomFloor
+      objectReference: {fileID: 0}
+    - target: {fileID: 8452985334565660740, guid: 609d1107664ffc141abb117352dbbcd5, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8452985334565660741, guid: 609d1107664ffc141abb117352dbbcd5, type: 3}
       propertyPath: m_RootOrder
