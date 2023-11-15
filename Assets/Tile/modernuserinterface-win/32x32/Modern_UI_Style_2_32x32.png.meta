@@ -8736,13 +8736,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_414
+      name: PauseButton001
       rect:
         serializedVersion: 2
-        x: 770
+        x: 768
         y: 0
-        width: 27
-        height: 193
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10773,13 +10773,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_513
+      name: playButton002
       rect:
         serializedVersion: 2
-        x: 802
+        x: 800
         y: 32
-        width: 28
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10794,13 +10794,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_514
+      name: playButton003
       rect:
         serializedVersion: 2
-        x: 834
+        x: 832
         y: 32
-        width: 28
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10941,13 +10941,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_521
+      name: PauseButton002
       rect:
         serializedVersion: 2
-        x: 802
+        x: 800
         y: 0
-        width: 28
-        height: 30
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -10962,13 +10962,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_522
+      name: PausButton003
       rect:
         serializedVersion: 2
-        x: 834
+        x: 832
         y: 0
-        width: 28
-        height: 28
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -11172,7 +11172,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_UI_Style_2_32x32_327
+      name: LeftButton001
       rect:
         serializedVersion: 2
         x: 1184
@@ -11276,6 +11276,27 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: playButton001
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f7e429410a4544a8f5f2fad1a6f828
+      internalID: -1148623202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -11296,6 +11317,7 @@ TextureImporter:
       ArrowButton001: 503688911
       ArrowButton002: -1682670273
       ArrowButton003: 913795599
+      LeftButton001: -683589400
       LeftButton002: -851680403
       LeftButton003: 436756709
       Modern_UI_Style_2_32x32_0: -816165278
@@ -11545,7 +11567,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_322: -1124862624
       Modern_UI_Style_2_32x32_323: 231829140
       Modern_UI_Style_2_32x32_325: -1135228461
-      Modern_UI_Style_2_32x32_327: -683589400
       Modern_UI_Style_2_32x32_328: -853358328
       Modern_UI_Style_2_32x32_329: -848737668
       Modern_UI_Style_2_32x32_33: 1716240528
@@ -11641,7 +11662,6 @@ TextureImporter:
       Modern_UI_Style_2_32x32_411: -1287146451
       Modern_UI_Style_2_32x32_412: 86104671
       Modern_UI_Style_2_32x32_413: -1882847098
-      Modern_UI_Style_2_32x32_414: 377534339
       Modern_UI_Style_2_32x32_415: 1445538591
       Modern_UI_Style_2_32x32_416: -1808378945
       Modern_UI_Style_2_32x32_417: -368796421
@@ -11743,15 +11763,11 @@ TextureImporter:
       Modern_UI_Style_2_32x32_509: 1290221824
       Modern_UI_Style_2_32x32_51: -816388083
       Modern_UI_Style_2_32x32_510: -1419947850
-      Modern_UI_Style_2_32x32_513: 815764219
-      Modern_UI_Style_2_32x32_514: -1773139237
       Modern_UI_Style_2_32x32_515: 138616397
       Modern_UI_Style_2_32x32_516: -260673535
       Modern_UI_Style_2_32x32_519: -544200295
       Modern_UI_Style_2_32x32_52: -645143766
       Modern_UI_Style_2_32x32_520: 1263117924
-      Modern_UI_Style_2_32x32_521: 1196842396
-      Modern_UI_Style_2_32x32_522: -1131318721
       Modern_UI_Style_2_32x32_523: 103027258
       Modern_UI_Style_2_32x32_524: -100632244
       Modern_UI_Style_2_32x32_525: 512156908
@@ -11807,6 +11823,9 @@ TextureImporter:
       Modern_UI_Style_2_32x32_97: 32447574
       Modern_UI_Style_2_32x32_98: 1650380721
       Modern_UI_Style_2_32x32_99: -2058272268
+      PausButton003: -1131318721
+      PauseButton001: 377534339
+      PauseButton002: 1196842396
       RightButton001: -2074069599
       RightButton002: 1526259876
       RightButton003: 1024831326
@@ -11820,6 +11839,9 @@ TextureImporter:
       nomalButton001: 736899182
       nomalButton002: 1487411024
       nomalButton003: -925379451
+      playButton001: -1148623202
+      playButton002: 815764219
+      playButton003: -1773139237
       scrollbar1: -1837936119
       scrollbar2: -1183304617
   spritePackingTag: 
