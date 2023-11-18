@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: Spotlight
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 296967046, guid: dc55ff1ccf5a9324fa992ae9ad642fe7, type: 3}
+  - {fileID: -191835411, guid: dc55ff1ccf5a9324fa992ae9ad642fe7, type: 3}
+  - {fileID: 1063247490, guid: dc55ff1ccf5a9324fa992ae9ad642fe7, type: 3}
+  - {fileID: -822598446, guid: dc55ff1ccf5a9324fa992ae9ad642fe7, type: 3}
+  - {fileID: -1948946016, guid: dc55ff1ccf5a9324fa992ae9ad642fe7, type: 3}
+  - {fileID: 269443709, guid: dc55ff1ccf5a9324fa992ae9ad642fe7, type: 3}
+  - {fileID: -1815951083, guid: dc55ff1ccf5a9324fa992ae9ad642fe7, type: 3}
+  - {fileID: -857009790, guid: dc55ff1ccf5a9324fa992ae9ad642fe7, type: 3}
+  - {fileID: 1401361015, guid: dc55ff1ccf5a9324fa992ae9ad642fe7, type: 3}
+  m_MinSpeed: 2
+  m_MaxSpeed: 2
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 1
+  m_TileColliderType: 0
