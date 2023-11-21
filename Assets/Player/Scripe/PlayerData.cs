@@ -1,18 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
-using Unity.Netcode;
 using UnityEngine;
 
-public class PlayerData : NetworkBehaviour
+public class PlayerData : MonoBehaviour
 {
-    // ╠Ёц╪╧Ф╫д
-    //╧ы╢з
-    //╨╝
-    //╧Х╟Фю╫╬г
+    // Й╣░Л╡╢К╟╘Л▀²
+    //К╟■К▀╔
+    //К╡╫
+    //К╟╟Й╡╫Л²▄Л∙┘
 
-    //╧Хд║ ╧Ф╫д
-    //╟║╠╦ + даеыцВ ╠Б╢и
-    //╬вюз +  ╣Н╥о ╣х юл╧лаЖ ╤Г©Л╠Б
-    //даеыцВ ╠Б╢и ╥ё╢Щ ╬фюлеш ╩Щ╪╨(╦╝╬Се╦юс n╫ц ╨нем m╫ц╠НаЖ k╫ц╟ё аж╠Б╥н n╟Ё ╬фюлеш ╥ё╢Щ ╩Щ╪╨
+    //К╟╟Л╧≤ К╟╘Л▀²
+    //Й╟─Й╣╛ + Л╩╗М┘░Л╦═ Й╦╟К┼╔
+    //Л∙║Л·░ +  К⌠╠К║² К░° Л²╢К╞╦Л╖─ К²└Л ╟Й╦╟
+    //Л╩╗М┘░Л╦═ Й╦╟К┼╔ К·°К█╓ Л∙└Л²╢М┘° Л┐²Л└╠(К╕╛Л√╪М┐─Л·└ nЛ▀° К╤─М└╟ mЛ▀°Й╧▄Л╖─ kЛ▀°Й╟└ Лё╪Й╦╟К║° nЙ╟° Л∙└Л²╢М┘° К·°К█╓ Л┐²Л└╠
 }
