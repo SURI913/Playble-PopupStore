@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: School_Door_32x32_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b6261a200ced54a9ac8c32121603e8
+      internalID: 735187197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_1
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85efc1738f2f75e4ab844e4b49dbe0f8
+      internalID: -1605519770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_10
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5757970dd2760f4b89d313436abab25
+      internalID: -1180226293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_11
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5160359abbe446b469db773e90257552
+      internalID: 1468961069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_12
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56194a9f9261d7f4a9adaa3877acc866
+      internalID: -794601027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_13
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987e5d99484850b4c9246cfba5ef7ffe
+      internalID: -1622153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff27ebdba70dbbb46ab39e478c77584b
+      internalID: -2008775041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_3
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0506872c7987c6b4d9ee0a745eda6a6f
+      internalID: -395300885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1584375a0839cf849a882ff4ab023901
+      internalID: -606153046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_5
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2c2690aebd8e441bb4e2554b42e38a
+      internalID: -188353016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_6
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df5823ec2097844fb547bb53b079550
+      internalID: 327747982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_7
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedeaccd252157a43b54d7ff67333bd1
+      internalID: 2118577088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fe542086a36634aa2e3c6b290deedf
+      internalID: -1487973845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: School_Door_32x32_9
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 20
+        width: 96
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0915abe1c4673e8449dbfa190ebe3feb
+      internalID: -950224008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +408,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      School_Door_32x32_0: 735187197
+      School_Door_32x32_1: -1605519770
+      School_Door_32x32_10: -1180226293
+      School_Door_32x32_11: 1468961069
+      School_Door_32x32_12: -794601027
+      School_Door_32x32_13: -1622153
+      School_Door_32x32_2: -2008775041
+      School_Door_32x32_3: -395300885
+      School_Door_32x32_4: -606153046
+      School_Door_32x32_5: -188353016
+      School_Door_32x32_6: 327747982
+      School_Door_32x32_7: 2118577088
+      School_Door_32x32_8: -1487973845
+      School_Door_32x32_9: -950224008
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
