@@ -24,7 +24,13 @@ public class PlayerController : MonoBehaviour
 
         movement.Normalize();
 
-        rigid.velocity = movement * speed;
+        float tempSpeed = speed;
+        if (Input.GetKey(KeyCode.LeftShift))
+            tempSpeed = speed * 1.9f;
+
+        rigid.velocity = movement * tempSpeed;
+
+        //rigid.velocity = movement * speed;
     }
     void FixedUpdate()
     {  
