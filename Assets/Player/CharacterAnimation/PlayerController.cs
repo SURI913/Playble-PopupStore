@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rigid;
     [SerializeField] float speed =5f;
+    //[SerializeField] string playerID = Player;
     Vector2 movement = new Vector2();
     Animator animator;
     void Start()
@@ -24,7 +25,13 @@ public class PlayerController : MonoBehaviour
 
         movement.Normalize();
 
-        rigid.velocity = movement * speed;
+        float tempSpeed = speed;
+        if (Input.GetKey(KeyCode.LeftShift))
+            tempSpeed = speed * 1.9f;
+
+        rigid.velocity = movement * tempSpeed;
+
+        //rigid.velocity = movement * speed;
     }
     void FixedUpdate()
     {  

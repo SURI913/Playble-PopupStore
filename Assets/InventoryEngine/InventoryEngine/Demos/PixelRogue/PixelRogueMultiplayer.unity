@@ -174,7 +174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &93022842
 Transform:
   m_ObjectHideFlags: 0
@@ -1012,6 +1012,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1410802099, guid: 21bbf2e974b14e2468230a1da74b7a63, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1410802101, guid: 21bbf2e974b14e2468230a1da74b7a63, type: 3}
       propertyPath: TargetInventories.Array.data[0]
       value: 
@@ -1232,9 +1236,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1275950260628466, guid: 21bbf2e974b14e2468230a1da74b7a63, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1515502983337476, guid: 21bbf2e974b14e2468230a1da74b7a63, type: 3}
       propertyPath: m_Name
       value: UICamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 1802543878871002, guid: 21bbf2e974b14e2468230a1da74b7a63, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4604078063430832, guid: 21bbf2e974b14e2468230a1da74b7a63, type: 3}
       propertyPath: m_RootOrder
@@ -1860,6 +1872,10 @@ PrefabInstance:
       propertyPath: TargetInventories.Array.data[0]
       value: 
       objectReference: {fileID: 801302916}
+    - target: {fileID: 7365816162421148413, guid: 21bbf2e974b14e2468230a1da74b7a63, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21bbf2e974b14e2468230a1da74b7a63, type: 3}
 --- !u!1001 &798279274
