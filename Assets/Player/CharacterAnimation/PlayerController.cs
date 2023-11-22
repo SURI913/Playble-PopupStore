@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rigid;
     [SerializeField] float speed =5f;
+    //[SerializeField] string playerID = Player;
     Vector2 movement = new Vector2();
     Animator animator;
     void Start()

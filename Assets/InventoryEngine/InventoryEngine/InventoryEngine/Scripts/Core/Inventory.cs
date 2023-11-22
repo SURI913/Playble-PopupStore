@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using MoreMountains.Tools;
 using System.Collections.Generic;
@@ -484,6 +484,7 @@ namespace MoreMountains.InventoryEngine
 				if (InventoryItem.IsNull(Content[i]))
 				{
 					Content[i] = itemToAdd.Copy();
+					Debug.Log(Content[i]);
 					Content[i].Quantity = quantity;
 					return true;
 				}
