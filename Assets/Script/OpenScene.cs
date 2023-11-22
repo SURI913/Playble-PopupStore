@@ -15,32 +15,43 @@ public class OpenScene : MonoBehaviour
 
     private void Awake()
     {
-        //¼­¹ö°¡ ¿­·ÁÀÖ´ÂÁö Ç¥½ÃÇÏ´Â UI
-        hostButton = transform.GetChild(0).GetComponent<Button>();
+        //ì„œë²„ê°€ ì—´ë ¤ìˆëŠ”ì§€ í‘œì‹œí•˜ëŠ” UI
+        hostButton = transform.GetChild(0).transform.GetChild(0).GetComponent<Button>();
+        if(hostButton == null)
+        {
+            Debug.Log("í˜¸ìŠ¤íŠ¸ ë²„íŠ¼ ì—†ìŒ");
+        }
+        
+        clientButton = transform.GetChild(0).transform.GetChild(1).GetComponent<Button>();
+        if (clientButton == null)
+        {
+            Debug.Log("í´ë¼ì´ì–¸íŠ¸ ë²„íŠ¼ ì—†ìŒ");
+
+        }
         hostButton.onClick.AddListener(HostButtonClick);
-        clientButton = transform.GetChild(1).GetComponent<Button>();
-        clientButton.onClick.AddListener(ClientServer);
+        //clientButton.onClick.AddListener(); í˜¸ìŠ¤íŠ¸ ëœ ì„œë²„ í´ë¼ì´ì–¸íŠ¸ ì—°ê²°í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸ í•„ìš”
+
     }
 
-    //°ÔÀÓ ¸Å´ÏÀú¿¡¼­ °ª ¹Ş¾Æ¿Í¾ßÇÏ³ª
+    //ê²Œì„ ë§¤ë‹ˆì €ì—ì„œ ê°’ ë°›ì•„ì™€ì•¼í•˜ë‚˜
 
     private void HostButtonClick()
     {
         if (!isOpenServer)
         {
             isOpenServer=true;
-            // Æ÷Åæ ¼­¹ö »ı¼º ½ºÅ©¸³Æ® Ãß°¡ 
-            //ÇØ´ç ¼­¹ö·Î ÀÔÀå => Æ÷Åæ ¼­¹ö ÀÔÀåÇÏ´Â ½ºÅ©¸³Æ® Ãß°¡
-            ClientServer();
+            // í¬í†¤ ì„œë²„ ìƒì„± ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€ 
+            //í•´ë‹¹ ì„œë²„ë¡œ ì…ì¥ => í¬í†¤ ì„œë²„ ì…ì¥í•˜ëŠ” ìŠ¤í¬ë¦½íŠ¸ ì¶”ê°€
+            NextScene();
         }
         else
         {
-            Debug.Log("¼­¹ö°¡ ÀÌ¹Ì ¿­¸° »óÅÂ");
+            Debug.Log("ì„œë²„ê°€ ì´ë¯¸ ì—´ë¦° ìƒíƒœ");
         }
     }
 
 
-    private  void ClientServer()
+    private  void NextScene()
     {
         if(SceneName != null && isOpenServer)
         {
