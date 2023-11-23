@@ -10,7 +10,7 @@ public class ShopItem : MonoBehaviour
     [SerializeField] string itemName;
     //뱃지 용도 결정 x 필요한 데이터 값 생각해보고 띄우는 걸로
 
-    private WebViewObject webViewObject;
+    //private WebViewObject webViewObject;
 
 
     private Text myItemName;
