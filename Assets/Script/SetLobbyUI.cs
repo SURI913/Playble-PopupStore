@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SetLobbyUI : MonoBehaviour
 {
-    [SerializeField] GameObject ui;
+    [SerializeField] private GameObject ui;
 
     private void Awake()
     {
@@ -15,7 +15,7 @@ public class SetLobbyUI : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            //ÇÃ·¹ÀÌ¾î¶ó¸é
+            //í”Œë ˆì´ì–´ë¼ë©´
             ui.SetActive(true);
         }
     }
@@ -24,7 +24,7 @@ public class SetLobbyUI : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            //ÇÃ·¹ÀÌ¾î¶ó¸é
+            //í”Œë ˆì´ì–´ë¼ë©´
             ui.SetActive(false);
         }
     }

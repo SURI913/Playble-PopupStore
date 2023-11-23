@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using MoreMountains.Tools;
 using System.Collections.Generic;
@@ -23,7 +23,7 @@ namespace MoreMountains.InventoryEngine
 		/// the name of the inventory to display
 		[MMInformation("An InventoryDisplay is a component that will handle the visualization of the data contained in an Inventory. Start by specifying the name of the inventory you want to display.",MMInformationAttribute.InformationType.Info,false)]
 		public string TargetInventoryName = "MainInventory";
-		public string PlayerID = "Player1";
+		public string PlayerID = "Player1"; /*플레이어 오브젝트 이름이 여기 들어감 플레이어 id랑 관련 x?*/
 
 		protected Inventory _targetInventory = null;
 
