@@ -12,7 +12,7 @@ public class SetLobbyUI : MonoBehaviour
     private void Awake()
     {
         ui.SetActive(false);
-        uiAnim = uiAnim.GetComponent<Animator>();
+        uiAnim = ui.GetComponent<Animator>();
     }
 
     IEnumerator CloseAnimStart()
