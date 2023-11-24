@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MapMaker.unity
     guid: d76761866a32baa4d8992af5a8b5929d
+  - enabled: 1
+    path: Assets/Scenes/MarketConnectionUI.unity
+    guid: e871e748e83f619419da33343ffff439
   m_configObjects: {}
