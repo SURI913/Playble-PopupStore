@@ -17,6 +17,8 @@ public class LoginManager : MonoBehaviour
     [SerializeField] GameObject registerSuccessUI;
 
     [SerializeField] Animator logInUI;
+    [SerializeField] GameObject StartButton;
+    [SerializeField] GameObject ExitButton;
 
 
     const float uiLoadSecond = 2f;
@@ -32,10 +34,15 @@ public class LoginManager : MonoBehaviour
         registerSuccessUI.SetActive(false);
 
         registerAnim = GetComponent<Animator>();
+
+        StartButton.SetActive(true);
+        ExitButton.SetActive(true);
     }
 
     void ExitLogInUI()
     {
+        StartButton.SetActive(true);
+        ExitButton.SetActive(true);
         logInUI.SetTrigger("Close");
     }
 
@@ -47,6 +54,7 @@ public class LoginManager : MonoBehaviour
         UI.GetComponent<Animator>().SetTrigger("Close");
         yield return new WaitForSeconds(0.3f);
         UI.SetActive(false);
+        yield return null;
     }
 
     IEnumerator RegisterSuccessMsg() //가입버튼 활성화 시
@@ -57,9 +65,12 @@ public class LoginManager : MonoBehaviour
         registerAnim.SetTrigger("Close");
         yield return new WaitForSeconds(0.3f);
         registerSuccessUI.SetActive(false);
-
         //씬 이동
+
+        StartButton.SetActive(false);
+        ExitButton.SetActive(false);
         GameManager.Instance.NextScene = SceneSet.lobby;
+        yield return null;
     }
 
     //로그인 버튼 클릭
@@ -73,9 +84,12 @@ public class LoginManager : MonoBehaviour
         if (GameManager.Instance.LogInPlayer()) //유저 데이터 확인하도록 수정
         {
             //유저 데이터 확인 후 맞다면
-            
+
             //씬이동
+            StartButton.SetActive(false);
+            ExitButton.SetActive(false);
             GameManager.Instance.NextScene = SceneSet.lobby;
+
         }
         else
         {

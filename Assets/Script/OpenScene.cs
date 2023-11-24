@@ -1,18 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class OpenScene : MonoBehaviour
 {
-    [SerializeField] string SceneName;
+    [SerializeField] int serverLocation;
 
     private bool isOpenServer = false;
     private Button hostButton;
     private Button clientButton;
+    private Text serverName;
+    private Text serverPlayerCount;
 
-
+    private Animator myAnim;
     private void Awake()
     {
         //서버가 열려있는지 표시하는 UI
@@ -29,20 +30,40 @@ public class OpenScene : MonoBehaviour
 
         }
         hostButton.onClick.AddListener(HostButtonClick);
-        //clientButton.onClick.AddListener(); 호스트 된 서버 클라이언트 연결하는 스크립트 필요
+        clientButton.onClick.AddListener(ClientButtonClick);
+        serverName = transform.GetChild(1).GetComponent<Text>();
+        serverPlayerCount = transform.GetChild(2).GetComponent<Text>();
+        myAnim = GetComponent<Animator>();
+    }
+    IEnumerator CloseAnimStart() //호스트 활성화 시
+    {
 
+        myAnim.SetTrigger("Close");
+        yield return new WaitForSeconds(0.3f);
+        gameObject.SetActive(false);
+
+        //씬 이동
+        GameManager.Instance.CreatServer(serverLocation);
+        yield return null;
+    }
+
+    private void SetServerData()
+    {
+        serverName.text = GameManager.Instance.GetServerName(serverLocation);
+        serverPlayerCount.text = string.Format("# / 5",GameManager.Instance.CountPlusPlayer(serverLocation)); //입장인원체크겸 값 전달 받음
     }
 
     //게임 매니저에서 값 받아와야하나
 
     private void HostButtonClick()
     {
-        if (!isOpenServer)
+        if (!GameManager.Instance.CheckingHostServer(serverLocation))
         {
             isOpenServer=true;
-            // 포톤 서버 생성 스크립트 추가 
-            //해당 서버로 입장 => 포톤 서버 입장하는 스크립트 추가
-            NextScene();
+            SetServerData();
+
+            // 포톤 서버 생성
+            StartCoroutine(CloseAnimStart());
         }
         else
         {
@@ -50,14 +71,19 @@ public class OpenScene : MonoBehaviour
         }
     }
 
-
-    private  void NextScene()
+    private void ClientButtonClick()
     {
-        if(SceneName != null && isOpenServer)
+        if (GameManager.Instance.CheckingHostServer(serverLocation))
         {
-            isOpenServer = true;
-            SceneManager.LoadScene(SceneName);
-        }
 
+            SetServerData();
+            // 포톤 서버 입장
+            StartCoroutine(CloseAnimStart());
+        }
+        else
+        {
+            Debug.Log("서버 호스팅을 해야함");
+        }
     }
+    
 }
