@@ -159,6 +159,8 @@ MonoBehaviour:
   noneDataUI: {fileID: 750721666}
   registerSuccessUI: {fileID: 2095272097}
   logInUI: {fileID: 8253084823733202464}
+  StartButton: {fileID: 5684228998810875086}
+  ExitButton: {fileID: 2913910369534543383}
 --- !u!4 &32019522
 Transform:
   m_ObjectHideFlags: 0
@@ -1511,7 +1513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &1007161423
 AudioListener:
   m_ObjectHideFlags: 0
