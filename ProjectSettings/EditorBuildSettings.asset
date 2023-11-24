@@ -6,6 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Honeti/PixelArtGUI/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 3c1fd3ae5b70d6a48946c8f888695d47
+  - enabled: 1
+    path: Assets/Scenes/StartScene.unity
+    guid: afec0c5851a2d07438374f27e0c06ca2
+  - enabled: 1
+    path: Assets/Scenes/StartBackGroundScene.unity
+    guid: dd88bb726aea59d459e82e96a515c06d
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 8b435c6fe5184ae40932ac5b2474178c
+  - enabled: 1
+    path: Assets/Scenes/MapMaker.unity
+    guid: d76761866a32baa4d8992af5a8b5929d
   m_configObjects: {}
