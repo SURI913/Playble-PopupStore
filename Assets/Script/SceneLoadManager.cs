@@ -1,3 +1,4 @@
+using MoreMountains.InventoryEngine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,6 +14,9 @@ public class SceneLoadManager : MonoBehaviour
 
     //페이드 인아웃 처리
     [SerializeField] Image fadeObj;
+
+    [SerializeField] GameObject inventoryUI;
+
     private Color fadeAlpha;
     private float fadeSpeed = 0.05f;
     public bool isFadeInOut { get; private set; } = false;
@@ -61,12 +65,13 @@ public class SceneLoadManager : MonoBehaviour
             SceneManager.LoadScene("StartBackGroundScene", LoadSceneMode.Additive);
             unLoadSceneName.Push("StartScene");
             unLoadSceneName.Push("StartBackGroundScene");
-
+            inventoryUI.SetActive(false);
         }
         if (sceneName == SceneSet.lobby)
         {
             SceneManager.LoadScene("Lobby", LoadSceneMode.Additive);
             unLoadSceneName.Push("Lobby");
+            FindPlayInventory();
 
         }
         if (sceneName == SceneSet.server)
@@ -76,6 +81,7 @@ public class SceneLoadManager : MonoBehaviour
             SceneManager.LoadScene("MarketConnectionUI", LoadSceneMode.Additive); //상품 서버와 연결
             unLoadSceneName.Push("MapMaker");
             unLoadSceneName.Push("MarketConnectionUI");
+            FindPlayInventory();
 
         }
 
@@ -89,4 +95,25 @@ public class SceneLoadManager : MonoBehaviour
         fadeObj.gameObject.SetActive(false);
         isFadeInOut = false;
     }
+
+    bool isFindPlayerInventory = false;
+    private void FindPlayInventory()
+    {
+        //민팅 씬 있을때마다 거기에 있는 인벤토리 찾아서 플레이어 이름 바꿔줌
+        if (!isFindPlayerInventory)
+        {
+            inventoryUI.SetActive(true);
+            Inventory playerInventory = GameObject.Find("RogueMainInventory").GetComponent<Inventory>();
+            InventoryDisplay playerInventoryDisplay = GameObject.Find("RogueMainInventoryDisplay").GetComponent<InventoryDisplay>();
+            if (playerInventory != null && playerInventoryDisplay != null)
+            {
+                playerInventory.PlayerID = GameManager.Instance.playerId;
+                playerInventoryDisplay.PlayerID = GameManager.Instance.playerId;
+                isFindPlayerInventory = true;
+            }
+        }
+        
+    }
+
+
 }
