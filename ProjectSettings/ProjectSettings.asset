@@ -667,7 +667,7 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: MOREMOUNTAINS_INVENTORYENGINE
+    Standalone: MOREMOUNTAINS_INVENTORYENGINE;VUPLEX_STANDALONE
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
