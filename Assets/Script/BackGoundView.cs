@@ -16,7 +16,7 @@ public class BackGoundView : MonoBehaviour
     }
 
     [Header("카메라 움직임 속도 값이 클수록 천천히 움직임")]
-    [Range(1f, 10f)]
+    [Range(1f, 20f)]
     [SerializeField] float speed;
 
     Vector3 leftTop = new Vector3(-40, 19, -10);
