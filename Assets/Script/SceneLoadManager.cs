@@ -72,7 +72,6 @@ public class SceneLoadManager : MonoBehaviour
             SceneManager.LoadScene("Lobby", LoadSceneMode.Additive);
             unLoadSceneName.Push("Lobby");
             FindPlayInventory();
-
         }
         if (sceneName == SceneSet.server)
         {
