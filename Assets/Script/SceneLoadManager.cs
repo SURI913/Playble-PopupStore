@@ -45,7 +45,8 @@ public class SceneLoadManager : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
         //이 사이에 씬 로드 해야함
-
+        
+        
         //이 사이에 로딩씬에 필요한 코드 작성
 
         //해당 씬에 없어야 할 씬들
@@ -72,7 +73,6 @@ public class SceneLoadManager : MonoBehaviour
             SceneManager.LoadScene("Lobby", LoadSceneMode.Additive);
             unLoadSceneName.Push("Lobby");
             FindPlayInventory();
-
         }
         if (sceneName == SceneSet.server)
         {
