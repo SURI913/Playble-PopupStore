@@ -1,11 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-[CreateAssetMenu(fileName = "Image Data", menuName = "Scriptable Object/Image Data")]
-public class UploadImageData : ScriptableObject
-{
-    [SerializeField]
-    public string imageName;
-    public Sprite imageData;
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:0c54d656432e53958969edd362ea069b0cce41a74a3b9b30d24ac921ba56a1e7
+size 382
