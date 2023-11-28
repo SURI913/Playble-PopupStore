@@ -1,32 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEngine;
-using UnityEngine.UI;
-
-public class ShowFrame : MonoBehaviour
-{
-    [SerializeField] GameObject Player;
-    [SerializeField] UploadImageData uploadImageData; //각 버튼마다 넣을 데이터 다름
-    [SerializeField] Image image;
-    [SerializeField] GameObject ShowImageObject;
-    [SerializeField] GameObject ShowButton;
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            image.sprite = uploadImageData.imageData;
-            ShowButton.SetActive(true);
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Player")
-        {
-            ShowButton.SetActive(false);
-        }
-    }
-
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:6c9d275eeda47c8962630e6264d999786d972a86f159e973e768341c55dc9cc3
+size 1620
