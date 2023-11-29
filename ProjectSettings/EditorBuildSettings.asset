@@ -1,29 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!1045 &1
-EditorBuildSettings:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Honeti/PixelArtGUI/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
-    path: Assets/Scenes/Main.unity
-    guid: 3c1fd3ae5b70d6a48946c8f888695d47
-  - enabled: 1
-    path: Assets/Scenes/StartScene.unity
-    guid: afec0c5851a2d07438374f27e0c06ca2
-  - enabled: 1
-    path: Assets/Scenes/StartBackGroundScene.unity
-    guid: dd88bb726aea59d459e82e96a515c06d
-  - enabled: 1
-    path: Assets/Scenes/Lobby.unity
-    guid: 8b435c6fe5184ae40932ac5b2474178c
-  - enabled: 1
-    path: Assets/Scenes/MapMaker.unity
-    guid: d76761866a32baa4d8992af5a8b5929d
-  - enabled: 1
-    path: Assets/Scenes/MarketConnectionUI.unity
-    guid: e871e748e83f619419da33343ffff439
-  m_configObjects: {}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e03f6c58616ecedd40620c2b0fc3c3dcb953c7262241e02f9c15789d334febb3
+size 958
