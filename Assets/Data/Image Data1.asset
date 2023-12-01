@@ -1,15 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3f895a077eb348428d49e9adc8e34cb, type: 3}
-  m_Name: Image Data1
-  m_EditorClassIdentifier: 
-  imageName: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:0aa7498d1804c153c51c0d4a103640dc5b1777da5e2da430a27c2d3f23c1a9c9
+size 497
